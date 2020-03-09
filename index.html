@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+    <title>Snake</title>
+</head>
+<body>
+
+    <div class="container">
+        <canvas id="game" width="400px" height="400px"></canvas>
+
+        <div class="score-block">
+            <p class="score-label">Score:</p>
+            <span class="score">0</span>
+        </div>
+    </div>   
+
+
+    <div class="start-popup popup">
+        <div class="popup-container">
+            <input class="player-name" type="text" id="player" placeholder="enter your name" value="Player">
+            <button class="start-btn button">Start</button>
+        </div>            
+    </div>
+
+    <div class="end-popup popup">
+        <div class="popup-container">
+            <span class="results">Results</span>
+            <ul class="score-list">
+
+            </ul>
+            <div class="buttons">
+                <button class="again-btn button">Try again</button>
+                <button class="clear-btn button">Clear</button>
+            </div>            
+        </div>
+        
+        <div class="result-template">
+            <li class="score-item">
+                <span class="result-name">Player</span>
+                <span class="result-score">100</span>
+            </li>
+        </div>
+    </div>
+ 
+
+    <script src="./script.js"></script>
+</body>
+</html>
