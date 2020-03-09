@@ -194,7 +194,6 @@ document.addEventListener('keydown', function(evt) {
 });
 
 document.addEventListener('touchstart', function(evt) { 
-    console.log(evt.touches[0].pageX);   
     if (evt.touches[0].pageX < snake.x && snake.dx === 0) {
         snake.dx = -grid;
         snake.dy = 0;
